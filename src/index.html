@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket Chat</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <main id="main">
+        <!-- data client -->
+        <div class="user-data" id="user-data">
+            <label for="name-user">
+                <input type="text" name="name-user" id="name-user" autocomplete="off" placeholder="Ingreza tu Nombre">
+                <span id="warning">WELCOME TO SOCKET CHAT</span>
+            </label>
+        </div>
+        <!-- notification menssage -->
+        <div class="notification" id="notification">
+            <!-- name client notification -->
+        </div>
+        <!-- chat body -->
+        <div class="chat-body" id="chat-body">
+            <div class="container">
+                <div class="wrapper">
+                    <ul id="view-menssage">
+                        <!-- menssages client -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- chat footer -->
+        <div class="chat-footer">
+            <div class="container">
+                <div class="wrapper">
+                    <label for="menssage">
+                        <input type="text" name="menssage" id="menssage" autocomplete="off" placeholder="type a menssage">
+                        <span onclick="menssageUser()"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
